@@ -31,6 +31,7 @@ export default function ClubSite() {
         <a href="#events">Events</a>
         <a href="#impact">Impact</a>
         <a href="#gallery">Gallery</a>
+        <a href="/team">Team</a>
       </nav>
 
       <a className="header-cta" href="#join">Join the loop <span>↗</span></a>
@@ -50,7 +51,8 @@ export default function ClubSite() {
         <a href="#events">02 / Events</a>
         <a href="#impact">04 / Impact</a>
         <a href="#gallery">06 / Gallery</a>
-        <a href="#join">07 / Join</a>
+        <a href="/team">07 / Team</a>
+        <a href="#join">08 / Join</a>
       </nav>
     </header>
 
@@ -144,16 +146,16 @@ export default function ClubSite() {
               <p>Event formats</p>
             </article>
             <article>
-              <strong data-count="2">00</strong>
+              <strong data-count="3">00</strong>
               <p>Core disciplines</p>
             </article>
             <article>
-              <strong data-count="1">00</strong>
-              <p>National flagship</p>
+              <strong data-count="2">00</strong>
+              <p>Flagship editions</p>
             </article>
             <article>
-              <strong>∞</strong>
-              <p>Reasons to build</p>
+              <strong data-count="376">000</strong>
+              <p>Teams at Codenovate 2.0</p>
             </article>
           </div>
         </div>
@@ -198,9 +200,18 @@ export default function ClubSite() {
           </div>
           <h3>ONE PROBLEM.<br />A THOUSAND WAYS IN.</h3>
           <p>
-            Codenovate is KMIT's national flagship hackathon: a high-pressure
-            arena for ambitious ideas, sharp execution, and teams that refuse
-            to settle for the obvious answer.
+            Codenovate is Recurse's national 24-hour hackathon—open to B.Tech
+            students across India, built around collaborative teams, eight
+            problem statements, and real execution under pressure.
+          </p>
+          <div className="flagship__metrics" aria-label="Codenovate 2.0 statistics">
+            <article><strong>376</strong><span>Teams registered</span></article>
+            <article><strong>61</strong><span>Finalist teams</span></article>
+            <article><strong>239</strong><span>On-site builders</span></article>
+            <article><strong>58K+</strong><span>Unstop impressions</span></article>
+          </div>
+          <p className="flagship__proof">
+            Codenovate 2.0 · November 2025 · ₹75,000 total podium prize pool
           </p>
           <a className="text-link" href="#join">
             Track the next edition <span>↗</span>
@@ -246,7 +257,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>National Hackathon</p>
               <h3>CODENOVATE</h3>
-              <span>Ideas meet execution. Sleep becomes optional.</span>
+              <span>A national 24-hour build sprint where ideas meet execution.</span>
+              <ul className="event-card__facts">
+                <li>15 Nov 2025 · 8 problem statements</li>
+                <li>376 teams · 61 finalist teams</li>
+              </ul>
             </div>
           </article>
 
@@ -261,7 +276,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>Code Quiz</p>
               <h3>KBC</h3>
-              <span>Kaun Banega Codepati. Lock kiya jaye?</span>
+              <span>A hot-seat code quiz with nostalgia, lifelines, and a do-or-die finale.</span>
+              <ul className="event-card__facts">
+                <li>17 Apr 2026 · Saanjh '26</li>
+                <li>50+ teams · 11 prize rounds</li>
+              </ul>
             </div>
           </article>
 
@@ -278,7 +297,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>IRL Challenge</p>
               <h3>SUBWAY SURFERS</h3>
-              <span>The game escaped the screen and took over campus.</span>
+              <span>A fast reflex-and-scoring challenge that escaped the screen.</span>
+              <ul className="event-card__facts">
+                <li>17 Apr 2026 · Saanjh '26</li>
+                <li>Hosted by Tarang + Varsha</li>
+              </ul>
             </div>
           </article>
 
@@ -293,7 +316,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>Strategy Event</p>
               <h3>COINQUEST</h3>
-              <span>Clues, logic, pressure, and the next smart move.</span>
+              <span>A points-driven strategy concept built around side quests and smart moves.</span>
+              <ul className="event-card__facts">
+                <li>2026 planning cycle</li>
+                <li>Concept owner · Hamsika</li>
+              </ul>
             </div>
           </article>
 
@@ -309,7 +336,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>Hands-on Workshops</p>
               <h3>REBOOT</h3>
-              <span>Practical sessions. Useful skills. Zero passive learning.</span>
+              <span>From Hallucinations to Precision: a full day of LLMs, RAG, and hands-on work.</span>
+              <ul className="event-card__facts">
+                <li>4 Apr 2026 · 120 participants</li>
+                <li>Led by Jai + Charan</li>
+              </ul>
             </div>
           </article>
 
@@ -326,7 +357,11 @@ export default function ClubSite() {
             <div className="event-card__body">
               <p>Peer Community</p>
               <h3>COMMON INTEREST GROUPS</h3>
-              <span>Find your niche. Then find your people.</span>
+              <span>Three active, peer-led groups for learning and building together.</span>
+              <ul className="event-card__facts">
+                <li>Web Dev · AI/ML · DSA/CP</li>
+                <li>65 registered members at launch</li>
+              </ul>
             </div>
           </article>
 
@@ -342,6 +377,9 @@ export default function ClubSite() {
               <p>Tech Playground</p>
               <h3>ENGINEER'D</h3>
               <span>Engineering instincts, chaotic challenges.</span>
+              <ul className="event-card__facts">
+                <li>Fun × tech event format</li>
+              </ul>
             </div>
           </article>
         </div>
@@ -423,7 +461,7 @@ export default function ClubSite() {
               <span>01</span>
               <div>
                 <h3>EXPOSURE</h3>
-                <p>Students meet tools, domains, and possibilities beyond class.</p>
+                <p>120 students got hands-on with LLMs and RAG in a single day at ReBoot I.</p>
               </div>
               <b>→</b>
             </article>
@@ -431,7 +469,7 @@ export default function ClubSite() {
               <span>02</span>
               <div>
                 <h3>EXPERIENCE</h3>
-                <p>Ideas become prototypes through real constraints and deadlines.</p>
+                <p>376 teams registered to turn ideas into working prototypes at Codenovate 2.0.</p>
               </div>
               <b>→</b>
             </article>
@@ -439,7 +477,7 @@ export default function ClubSite() {
               <span>03</span>
               <div>
                 <h3>COMMUNITY</h3>
-                <p>People with the same interests stop building alone.</p>
+                <p>65 members joined three Common Interest Groups at the introductory meet.</p>
               </div>
               <b>→</b>
             </article>
@@ -447,7 +485,7 @@ export default function ClubSite() {
               <span>04</span>
               <div>
                 <h3>MOMENTUM</h3>
-                <p>The event ends. The ambition does not.</p>
+                <p>Two flagship hackathon editions—and a community that keeps building after the event.</p>
               </div>
               <b>↗</b>
             </article>
@@ -476,38 +514,26 @@ export default function ClubSite() {
         <div className="cig-list reveal">
           <article>
             <span>GROUP_01</span>
-            <h3>WEB / APP</h3>
-            <p>Interfaces, systems, products.</p>
+            <h3>WEB DEVELOPMENT</h3>
+            <p>Git, GitHub, deployment, and hackathon-ready builds · Mon/Tue</p>
             <i>↗</i>
           </article>
           <article>
             <span>GROUP_02</span>
-            <h3>AI / ML</h3>
-            <p>Models, data, experiments.</p>
+            <h3>AI &amp; MACHINE LEARNING</h3>
+            <p>ML to deep learning, regression, classification, and neural networks.</p>
             <i>↗</i>
           </article>
           <article>
             <span>GROUP_03</span>
-            <h3>COMPETITIVE CODE</h3>
-            <p>Problems, patterns, speed.</p>
-            <i>↗</i>
-          </article>
-          <article>
-            <span>GROUP_04</span>
-            <h3>CIRCUITS / IoT</h3>
-            <p>Hardware that talks back.</p>
-            <i>↗</i>
-          </article>
-          <article>
-            <span>GROUP_05</span>
-            <h3>CYBERSECURITY</h3>
-            <p>Break it. Understand it. Secure it.</p>
+            <h3>DSA / COMPETITIVE PROGRAMMING</h3>
+            <p>Arrays to advanced patterns, with Easy → Medium → Hard progression · Sat</p>
             <i>↗</i>
           </article>
         </div>
-        <p className="content-note reveal">
-          <span>CONTENT NOTE</span> CIG names above are editable placeholders
-          until the active group roster is confirmed.
+        <p className="cig-proof reveal">
+          <span>65 MEMBERS</span> registered across the three active groups
+          at the September 2025 introductory meet.
         </p>
       </section>
 
@@ -518,7 +544,7 @@ export default function ClubSite() {
             <p>Proof we were here</p>
           </div>
           <h2>THE BUILD.<br />THE BUZZ.<br /><span>THE PEOPLE.</span></h2>
-          <p>Photo placeholders ready for your real event archive.</p>
+          <p>Five standout moments ready for their event photographs.</p>
         </div>
 
         <div className="gallery-grid">
@@ -526,31 +552,31 @@ export default function ClubSite() {
             <div className="gallery-placeholder gallery-placeholder--one">
               <span>ADD PHOTO</span><b>01</b>
             </div>
-            <figcaption>Codenovate / Finale stage</figcaption>
+            <figcaption>Codenovate 2.0 / Stage, build floor, winners</figcaption>
           </figure>
           <figure className="gallery-item reveal">
             <div className="gallery-placeholder gallery-placeholder--two">
               <span>ADD PHOTO</span><b>02</b>
             </div>
-            <figcaption>KBC / Saanjh '26</figcaption>
+            <figcaption>KBC / Hot seat at Saanjh '26</figcaption>
           </figure>
           <figure className="gallery-item gallery-item--wide reveal">
             <div className="gallery-placeholder gallery-placeholder--three">
               <span>ADD PHOTO</span><b>03</b>
             </div>
-            <figcaption>Reboot / Workshop in progress</figcaption>
+            <figcaption>ReBoot I / Jai, Charan, and 120 participants</figcaption>
           </figure>
           <figure className="gallery-item reveal">
             <div className="gallery-placeholder gallery-placeholder--four">
               <span>ADD PHOTO</span><b>04</b>
             </div>
-            <figcaption>Subway Surfers / On the run</figcaption>
+            <figcaption>Mystery Raas / Social deduction at the canteen</figcaption>
           </figure>
           <figure className="gallery-item gallery-item--tall reveal">
             <div className="gallery-placeholder gallery-placeholder--five">
               <span>ADD PHOTO</span><b>05</b>
             </div>
-            <figcaption>Recurse / The people behind it</figcaption>
+            <figcaption>DBS / Placements &amp; Beyond livestream</figcaption>
           </figure>
         </div>
       </section>
@@ -564,7 +590,8 @@ export default function ClubSite() {
         <p className="join__accent reveal">ENTER IT<span className="blink">_</span></p>
         <p className="join__copy reveal">
           Bring the curiosity. We’ll bring the people, the problems, and a
-          reason to build something bigger.
+          reason to build something bigger. Recruitment updates go live on
+          @recurse.official.
         </p>
         <div className="join__actions reveal">
           <a
@@ -578,10 +605,10 @@ export default function ClubSite() {
           <a className="button button--line" href="mailto:recurse@kmit.in">
             Talk to the team
           </a>
+          <a className="button button--line" href="/team">
+            Meet the team
+          </a>
         </div>
-        <p className="content-note content-note--join reveal">
-          Replace the email and add the recruitment form URL before launch.
-        </p>
       </section>
 
       <section className="terminal-section" aria-label="Interactive Recurse terminal">
@@ -626,6 +653,7 @@ export default function ClubSite() {
           <a href="#events">Events</a>
           <a href="#impact">Impact</a>
           <a href="#gallery">Gallery</a>
+          <a href="/team">Team</a>
         </div>
         <div>
           <span>CONNECT</span>

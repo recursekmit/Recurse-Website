@@ -1,11 +1,28 @@
 export const timelineEvents = [
   {
+    date: "2024-10-04",
+    label: "OCT 2024",
+    title: "CodeCharades",
+    category: "PLAY",
+    description:
+      "An early Recurse event combining technical vocabulary with the energy of charades.",
+  },
+  {
+    date: "2025-03-10",
+    label: "MAR 2025",
+    title: "Prompt Quest",
+    category: "PLAY",
+    description:
+      "A prompt-driven challenge built around creative thinking and precise instructions.",
+  },
+  {
     date: "2025-09-05",
     label: "SEP 2025",
     title: "CIG Launch",
     category: "COMMUNITY",
     description:
       "Three Common Interest Groups go live - Web Dev, AI/ML, and DSA/CP - with 65 members registering on day one.",
+    stat: "65 registered members",
   },
   {
     date: "2025-09-15",
@@ -54,7 +71,7 @@ export const timelineEvents = [
     date: "2026-04-04",
     label: "APR 2026",
     title: "ReBoot I: From Hallucinations to Precision",
-    category: "FLAGSHIP",
+    category: "WORKSHOP",
     description:
       "A full-day hands-on workshop on LLMs and Retrieval-Augmented Generation, capped off with the Gandalf prompt-injection game.",
     stat: "120 participants",
