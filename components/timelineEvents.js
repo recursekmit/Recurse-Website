@@ -1,0 +1,71 @@
+export const timelineEvents = [
+  {
+    date: "2025-09-05",
+    label: "SEP 2025",
+    title: "CIG Launch",
+    category: "COMMUNITY",
+    description:
+      "Three Common Interest Groups go live - Web Dev, AI/ML, and DSA/CP - with 65 members registering on day one.",
+  },
+  {
+    date: "2025-09-15",
+    label: "SEP 2025",
+    title: "Hacktoberfest Guidance Session",
+    category: "WORKSHOP",
+    description:
+      "A primer on the open-source contribution workflow - forks, branches, pull requests - ahead of October.",
+  },
+  {
+    date: "2025-09-24",
+    label: "SEP 2025",
+    title: "NAVRAAS: Mystery Raas",
+    category: "COMMUNITY",
+    description:
+      "A mythology-themed social deduction game across junior and senior slots.",
+    stat: "100 participants",
+  },
+  {
+    date: "2025-11-15",
+    label: "NOV 2025",
+    title: "Codenovate 2.0",
+    category: "FLAGSHIP",
+    description:
+      "KMIT's national 24-hour hackathon - eight problem statements, a flashmob, a bonfire, and a closing jam session.",
+    stat: "376 teams registered / 61 finalist teams",
+  },
+  {
+    date: "2026-01-03",
+    label: "JAN 2026",
+    title: "FS Guidance Session",
+    category: "WORKSHOP",
+    description: "Placement and Grand Test strategy with senior mentors.",
+    stat: "82 attendees",
+  },
+  {
+    date: "2026-03-21",
+    label: "MAR 2026",
+    title: "DBS: Placements & Beyond",
+    category: "WORKSHOP",
+    description:
+      "Industry speakers break down DBS's recruitment process and work culture, livestreamed for anyone who could not make it in person.",
+    stat: "280+ viewers",
+  },
+  {
+    date: "2026-04-04",
+    label: "APR 2026",
+    title: "ReBoot I: From Hallucinations to Precision",
+    category: "FLAGSHIP",
+    description:
+      "A full-day hands-on workshop on LLMs and Retrieval-Augmented Generation, capped off with the Gandalf prompt-injection game.",
+    stat: "120 participants",
+  },
+  {
+    date: "2026-04-17",
+    label: "APR 2026",
+    title: "KBC x Subway Surfers",
+    category: "PLAY",
+    description:
+      "A Gen-Z nostalgia trivia game show with a progressive prize ladder, run alongside a real-world endless-runner challenge.",
+    stat: "50+ teams",
+  },
+];

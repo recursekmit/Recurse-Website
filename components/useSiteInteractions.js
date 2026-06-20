@@ -168,6 +168,28 @@ export function useSiteInteractions() {
       ),
     );
 
+    const timelineItems = document.querySelectorAll("[data-timeline-item]");
+    let timelineObserver;
+
+    if (timelineItems.length) {
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        timelineItems.forEach((item) => item.classList.add("is-active"));
+      } else {
+        timelineObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return;
+              entry.target.classList.add("is-active");
+            });
+          },
+          { threshold: 0.48, rootMargin: "0px 0px -18% 0px" },
+        );
+
+        timelineItems.forEach((item) => timelineObserver.observe(item));
+        cleanups.push(() => timelineObserver.disconnect());
+      }
+    }
+
     const canvas = document.querySelector("[data-network]");
     const context = canvas?.getContext("2d");
 

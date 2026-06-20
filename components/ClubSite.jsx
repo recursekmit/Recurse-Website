@@ -1,6 +1,7 @@
 "use client";
 
 import { useSiteInteractions } from "./useSiteInteractions";
+import { timelineEvents } from "./timelineEvents";
 
 export default function ClubSite() {
   useSiteInteractions();
@@ -47,9 +48,9 @@ export default function ClubSite() {
       <nav className="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
         <a href="#about">01 / About</a>
         <a href="#events">02 / Events</a>
-        <a href="#impact">03 / Impact</a>
-        <a href="#gallery">04 / Gallery</a>
-        <a href="#join">05 / Join</a>
+        <a href="#impact">04 / Impact</a>
+        <a href="#gallery">06 / Gallery</a>
+        <a href="#join">07 / Join</a>
       </nav>
     </header>
 
@@ -344,12 +345,61 @@ export default function ClubSite() {
             </div>
           </article>
         </div>
+
+        <section
+          className="event-timeline"
+          aria-labelledby="event-timeline-title"
+          data-timeline
+        >
+          <div className="section-label reveal">
+            <span>03</span>
+            <p>Chronological log</p>
+          </div>
+
+          <div className="section-heading event-timeline__heading reveal">
+            <div>
+              <p className="terminal-kicker">&gt; EVENTS --LOG --CHRONOLOGICAL</p>
+              <h2 id="event-timeline-title">EVERY COMMIT<br />SINCE WE STARTED.</h2>
+            </div>
+            <p>
+              The club calendar as a progress trail: workshops, games,
+              communities, and the flagship nights that moved the loop forward.
+            </p>
+          </div>
+
+          <ol className="timeline-list" aria-label="Recurse event timeline">
+            {timelineEvents.map((event, index) => (
+              <li
+                className="timeline-item reveal"
+                data-timeline-item
+                key={`${event.date}-${event.title}`}
+              >
+                <div className="timeline-item__node" aria-hidden="true"></div>
+                <article className="timeline-card" tabIndex={0}>
+                  <div className="timeline-card__top">
+                    <time dateTime={event.date}>{event.label}</time>
+                    <span className="timeline-tag">
+                      <i aria-hidden="true"></i>
+                      {event.category}
+                    </span>
+                  </div>
+                  <h3>{event.title}</h3>
+                  <p>{event.description}</p>
+                  <div className="timeline-card__bottom">
+                    <span>{String(index + 1).padStart(3, "0")} / LOG</span>
+                    {event.stat ? <b>{event.stat}</b> : <span aria-hidden="true">---</span>}
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ol>
+        </section>
       </section>
 
       <section className="impact" id="impact">
         <div className="impact__header reveal">
           <div className="section-label section-label--light">
-            <span>03</span>
+            <span>04</span>
             <p>The output</p>
           </div>
           <h2>WE DON'T COUNT<br />ATTENDANCE.<br /><span>WE COUNT IMPACT.</span></h2>
@@ -407,7 +457,7 @@ export default function ClubSite() {
 
       <section className="section cig-section">
         <div className="section-label reveal">
-          <span>04</span>
+          <span>05</span>
           <p>Find your people</p>
         </div>
 
@@ -464,7 +514,7 @@ export default function ClubSite() {
       <section className="gallery" id="gallery">
         <div className="gallery__heading reveal">
           <div className="section-label section-label--overlay">
-            <span>05</span>
+            <span>06</span>
             <p>Proof we were here</p>
           </div>
           <h2>THE BUILD.<br />THE BUZZ.<br /><span>THE PEOPLE.</span></h2>
@@ -553,6 +603,7 @@ export default function ClubSite() {
               autoComplete="off"
               spellCheck="false"
               aria-label="Terminal command"
+              suppressHydrationWarning
             />
             <span className="terminal-caret" aria-hidden="true"></span>
           </form>
