@@ -1,0 +1,244 @@
+.page {
+  --access-ink: #10120f;
+  --access-paper: #f7f8f3;
+  --access-surface: #ffffff;
+  --access-green: #a8ff35;
+  --access-green-deep: #487c08;
+  --access-muted: #73776f;
+  --access-line: #d7dad2;
+
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  color: var(--access-ink);
+  background: #dfe2da;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shell {
+  width: min(40rem, 100%);
+  overflow: hidden;
+  border: 1px solid rgba(16, 18, 15, 0.12);
+  background: var(--access-paper);
+  box-shadow: 0 1.5rem 4rem rgba(16, 18, 15, 0.13);
+}
+
+.signal {
+  height: 0.55rem;
+  background: var(--access-green);
+}
+
+.header {
+  min-height: 5.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.25rem clamp(1.25rem, 5vw, 2.25rem);
+  border-bottom: 1px solid var(--access-line);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 2.7rem;
+  height: 2.7rem;
+  display: grid;
+  flex: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--access-green);
+  background: var(--access-ink);
+  font: 700 0.8rem var(--mono);
+}
+
+.brandCopy {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.brandCopy strong {
+  font-size: 0.84rem;
+  letter-spacing: 0.08em;
+}
+
+.brandCopy small {
+  color: var(--access-muted);
+  font: 0.5rem var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.badge {
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--access-ink);
+  border-radius: 2rem;
+  font: 700 0.5rem var(--mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.body {
+  padding: clamp(1.4rem, 6vw, 2.5rem);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 0.85rem 1fr;
+  overflow: hidden;
+  border: 1px solid var(--access-ink);
+  border-radius: 0.9rem;
+  background: var(--access-surface);
+}
+
+.cardAccent {
+  background: var(--access-green);
+}
+
+.cardContent {
+  padding: clamp(1.7rem, 6vw, 3rem);
+}
+
+.kicker {
+  margin: 0 0 1rem;
+  color: var(--access-green-deep);
+  font: 700 0.58rem var(--mono);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.card h1 {
+  margin: 0;
+  color: var(--access-ink);
+  font-size: clamp(3.2rem, 10vw, 5.4rem);
+  line-height: 0.9;
+  letter-spacing: -0.075em;
+}
+
+.card h1 span {
+  color: var(--access-green-deep);
+}
+
+.copy {
+  max-width: 28rem;
+  margin: 1.8rem 0 0;
+  color: #535851;
+  font-size: clamp(0.92rem, 2vw, 1.05rem);
+  line-height: 1.65;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--access-line);
+}
+
+.statusDot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--access-green);
+  box-shadow: 0 0 0 0.35rem rgba(168, 255, 53, 0.18);
+}
+
+.statusCopy {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.statusCopy small {
+  color: var(--access-muted);
+  font: 0.5rem var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.statusCopy strong {
+  font: 700 0.68rem var(--mono);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 1.2rem;
+  border-radius: 0.7rem;
+  color: #ffffff;
+  background: var(--access-ink);
+}
+
+.note span {
+  color: var(--access-green);
+  font: 700 0.6rem var(--mono);
+}
+
+.note p {
+  margin: 0;
+  color: #c4c8c1;
+  font-size: 0.76rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem clamp(1.25rem, 5vw, 2.25rem);
+  color: #858a83;
+  background: var(--access-ink);
+  font: 0.52rem var(--mono);
+  letter-spacing: 0.08em;
+}
+
+.hiddenSignal {
+  display: none !important;
+}
+
+@media (max-width: 520px) {
+  .page {
+    padding: 0;
+    background: var(--access-paper);
+  }
+
+  .shell {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+    box-shadow: none;
+  }
+
+  .header {
+    min-height: 5rem;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .cardContent {
+    padding: 2rem 1.4rem;
+  }
+
+  .card h1 {
+    font-size: 3rem;
+    line-height: 0.95;
+  }
+}

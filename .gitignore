@@ -3,3 +3,11 @@ node_modules
 out
 .DS_Store
 *.log
+__pycache__/
+*.pyc
+
+# Candidate credentials and generated recruitment emails
+emails/participants.csv
+emails/generated/
+emails/config.seb
+emails/smtp.env
