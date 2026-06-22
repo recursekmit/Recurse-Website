@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useSiteInteractions } from "./useSiteInteractions";
 import { timelineEvents } from "./timelineEvents";
 
@@ -179,6 +180,14 @@ export default function ClubSite() {
 
       <section className="flagship">
         <div className="flagship__visual reveal">
+          <Image
+            className="flagship__photo"
+            src="/images/Codenovate/toast_0126_re-.jpg"
+            alt="Codenovate participants gathered on stage"
+            fill
+            sizes="(max-width: 980px) 100vw, 67vw"
+            priority
+          />
           <div className="flagship__noise"></div>
           <div className="flagship__rings" aria-hidden="true">
             <span></span><span></span><span></span>
@@ -249,10 +258,14 @@ export default function ClubSite() {
               <span>001 / FLAGSHIP</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--code">
-              <span>&lt;/&gt;</span>
-              <div className="code-lines" aria-hidden="true">
-                <i></i><i></i><i></i><i></i>
-              </div>
+              <Image
+                className="event-card__photo"
+                src="/images/Codenovate/DSC01890.jpg"
+                alt="Codenovate participants collaborating around a laptop"
+                fill
+                sizes="(max-width: 980px) 100vw, 66vw"
+              />
+              <span className="event-card__photo-label">24H / BUILD FLOOR</span>
             </div>
             <div className="event-card__body">
               <p>National Hackathon</p>
@@ -270,8 +283,14 @@ export default function ClubSite() {
               <span>002 / SAANJH '26</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--kbc">
-              <div className="kbc-orbit"><i></i><i></i><i></i><i></i></div>
-              <b>?</b>
+              <Image
+                className="event-card__photo"
+                src="/images/KBC+SS/DSC02256.jpg"
+                alt="KBC contestants seated in front of the projected quiz screen"
+                fill
+                sizes="(max-width: 680px) 100vw, 50vw"
+              />
+              <span className="event-card__photo-label">HOT SEAT / LIVE</span>
             </div>
             <div className="event-card__body">
               <p>Code Quiz</p>
@@ -289,10 +308,14 @@ export default function ClubSite() {
               <span>003 / SAANJH '26</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--runner">
-              <div className="runner" aria-hidden="true">
-                <i></i><i></i><i></i>
-              </div>
-              <div className="runner-track"></div>
+              <Image
+                className="event-card__photo"
+                src="/images/KBC+SS/DSC02090.jpg"
+                alt="Students playing the Subway Surfers challenge"
+                fill
+                sizes="(max-width: 680px) 100vw, 50vw"
+              />
+              <span className="event-card__photo-label">IRL / ENDLESS RUN</span>
             </div>
             <div className="event-card__body">
               <p>IRL Challenge</p>
@@ -324,14 +347,37 @@ export default function ClubSite() {
             </div>
           </article>
 
+          <article className="event-card reveal" data-category="play">
+            <div className="event-card__top">
+              <span>005 / FUN × TECH</span><span>↗</span>
+            </div>
+            <div className="event-card__art event-card__art--engine">
+              <div className="gear" aria-hidden="true">✣</div>
+              <span>ENGINEER'D</span>
+            </div>
+            <div className="event-card__body">
+              <p>Tech Playground</p>
+              <h3>ENGINEER'D</h3>
+              <span>Engineering instincts, chaotic challenges.</span>
+              <ul className="event-card__facts">
+                <li>Fun × tech event format</li>
+              </ul>
+            </div>
+          </article>
+
           <article className="event-card event-card--wide reveal" data-category="community">
             <div className="event-card__top">
-              <span>005 / WORKSHOP SERIES</span><span>↗</span>
+              <span>006 / WORKSHOP SERIES</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--reboot">
-              <p>WHEN STUCK:</p>
-              <strong>REBOOT<span className="blink">_</span></strong>
-              <div className="load-bar"><i></i></div>
+              <Image
+                className="event-card__photo"
+                src="/images/reboot/DSC00318.jpg"
+                alt="Students working hands-on during the ReBoot workshop"
+                fill
+                sizes="(max-width: 980px) 100vw, 66vw"
+              />
+              <span className="event-card__photo-label">LLMS / RAG / HANDS-ON</span>
             </div>
             <div className="event-card__body">
               <p>Hands-on Workshops</p>
@@ -344,9 +390,9 @@ export default function ClubSite() {
             </div>
           </article>
 
-          <article className="event-card reveal" data-category="community">
+          <article className="event-card event-card--tablet-wide reveal" data-category="community">
             <div className="event-card__top">
-              <span>006 / ALWAYS ON</span><span>↗</span>
+              <span>007 / ALWAYS ON</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--cig">
               <div className="cluster" aria-hidden="true">
@@ -365,23 +411,6 @@ export default function ClubSite() {
             </div>
           </article>
 
-          <article className="event-card reveal" data-category="play">
-            <div className="event-card__top">
-              <span>007 / FUN × TECH</span><span>↗</span>
-            </div>
-            <div className="event-card__art event-card__art--engine">
-              <div className="gear" aria-hidden="true">✣</div>
-              <span>ENGINEER'D</span>
-            </div>
-            <div className="event-card__body">
-              <p>Tech Playground</p>
-              <h3>ENGINEER'D</h3>
-              <span>Engineering instincts, chaotic challenges.</span>
-              <ul className="event-card__facts">
-                <li>Fun × tech event format</li>
-              </ul>
-            </div>
-          </article>
         </div>
 
         <section
@@ -421,6 +450,16 @@ export default function ClubSite() {
                       {event.category}
                     </span>
                   </div>
+                  {event.image ? (
+                    <div className="timeline-card__media">
+                      <Image
+                        src={event.image}
+                        alt={event.imageAlt}
+                        fill
+                        sizes="(max-width: 980px) 90vw, 40vw"
+                      />
+                    </div>
+                  ) : null}
                   <h3>{event.title}</h3>
                   <p>{event.description}</p>
                   <div className="timeline-card__bottom">
@@ -544,39 +583,130 @@ export default function ClubSite() {
             <p>Proof we were here</p>
           </div>
           <h2>THE BUILD.<br />THE BUZZ.<br /><span>THE PEOPLE.</span></h2>
-          <p>Five standout moments ready for their event photographs.</p>
+          <p>A wall of builds, crowds, portraits, and the moments between events.</p>
         </div>
 
         <div className="gallery-grid">
-          <figure className="gallery-item gallery-item--tall reveal">
-            <div className="gallery-placeholder gallery-placeholder--one">
-              <span>ADD PHOTO</span><b>01</b>
+          <figure className="gallery-item gallery-item--feature reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/Codenovate/@varun.pixels-127.jpg"
+                alt="A Codenovate team collaborating around a laptop"
+                fill
+                sizes="(max-width: 680px) 100vw, (max-width: 980px) 100vw, 66vw"
+              />
+              <b>01</b>
             </div>
-            <figcaption>Codenovate 2.0 / Stage, build floor, winners</figcaption>
+            <figcaption>Codenovate 2.0 / Ideas becoming working builds</figcaption>
+          </figure>
+          <figure className="gallery-item gallery-item--portrait reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/random/_VBC9316.jpg"
+                alt="A student dressed for the Navraas celebration"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+                style={{ objectPosition: "center 24%" }}
+              />
+              <b>02</b>
+            </div>
+            <figcaption>Navraas / Colour, community, and celebration</figcaption>
           </figure>
           <figure className="gallery-item reveal">
-            <div className="gallery-placeholder gallery-placeholder--two">
-              <span>ADD PHOTO</span><b>02</b>
+            <div className="gallery-photo">
+              <Image
+                src="/images/KBC+SS/DSC02789.jpg"
+                alt="The KBC and Subway Surfers event team posing together"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>03</b>
             </div>
-            <figcaption>KBC / Hot seat at Saanjh '26</figcaption>
+            <figcaption>KBC × Subway Surfers / Saanjh '26 crew</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/reboot/DSC00318.jpg"
+                alt="Students working together during the ReBoot workshop"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>04</b>
+            </div>
+            <figcaption>ReBoot I / Learning by doing</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/icebreaking.jpg"
+                alt="Recurse members seated together on the campus steps"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>05</b>
+            </div>
+            <figcaption>Ice Breaking / The community gets together</figcaption>
           </figure>
           <figure className="gallery-item gallery-item--wide reveal">
-            <div className="gallery-placeholder gallery-placeholder--three">
-              <span>ADD PHOTO</span><b>03</b>
+            <div className="gallery-photo">
+              <Image
+                src="/images/navras/WhatsApp Image 2026-06-22 at 11.35.23 PM.jpeg"
+                alt="Recurse members gathered together during Navraas"
+                fill
+                sizes="(max-width: 680px) 100vw, (max-width: 980px) 100vw, 66vw"
+              />
+              <b>06</b>
             </div>
-            <figcaption>ReBoot I / Jai, Charan, and 120 participants</figcaption>
+            <figcaption>Navraas / Mystery Raas and the festival crew</figcaption>
+          </figure>
+          <figure className="gallery-item gallery-item--portrait reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/Codenovate/@charan.captures-122.jpg"
+                alt="The Codenovate bonfire burning after the build"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>07</b>
+            </div>
+            <figcaption>Codenovate 2.0 / The bonfire after the build</figcaption>
           </figure>
           <figure className="gallery-item reveal">
-            <div className="gallery-placeholder gallery-placeholder--four">
-              <span>ADD PHOTO</span><b>04</b>
+            <div className="gallery-photo">
+              <Image
+                src="/images/promptquest.jpg"
+                alt="Prompt Quest participants working through a challenge"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>08</b>
             </div>
-            <figcaption>Mystery Raas / Social deduction at the canteen</figcaption>
+            <figcaption>Prompt Quest / Precision under pressure</figcaption>
           </figure>
-          <figure className="gallery-item gallery-item--tall reveal">
-            <div className="gallery-placeholder gallery-placeholder--five">
-              <span>ADD PHOTO</span><b>05</b>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/random/DSC00453.jpg"
+                alt="A packed room of students working on their laptops"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>09</b>
             </div>
-            <figcaption>DBS / Placements &amp; Beyond livestream</figcaption>
+            <figcaption>In the room / Focus mode on</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/farewell.jpg"
+                alt="Recurse members together at the club farewell"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>10</b>
+            </div>
+            <figcaption>Farewell / One more frame before the next loop</figcaption>
           </figure>
         </div>
       </section>
