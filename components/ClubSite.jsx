@@ -13,6 +13,15 @@ export default function ClubSite() {
 
     <div className="boot-screen" aria-hidden="true">
       <div className="boot-screen__inner">
+        <div className="boot-screen__logo">
+          <Image
+            src="/recurse-logo-white.png"
+            alt=""
+            width={464}
+            height={135}
+            priority
+          />
+        </div>
         <p>RECURSE BOOTLOADER // 2026</p>
         <div className="boot-line"><span>Loading curiosity</span><b>[OK]</b></div>
         <div className="boot-line"><span>Mounting ideas</span><b>[OK]</b></div>
@@ -23,8 +32,15 @@ export default function ClubSite() {
 
     <header className="site-header" data-header>
       <a className="brand" href="#top" aria-label="Recurse home">
-        <span className="brand__mark" aria-hidden="true">R/</span>
-        <span className="brand__name">RECURSE</span>
+        <span className="brand__logo brand__logo--dark" aria-hidden="true">
+          <Image
+            src="/recurse-logo-white.png"
+            alt=""
+            width={464}
+            height={135}
+            priority
+          />
+        </span>
       </a>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
@@ -602,15 +618,15 @@ export default function ClubSite() {
           <figure className="gallery-item gallery-item--portrait reveal">
             <div className="gallery-photo">
               <Image
-                src="/images/random/_VBC9316.jpg"
-                alt="A student dressed for the Navraas celebration"
+                src="/images/random/_VBC9271.jpg"
+                alt="Three students together during the Navraas celebration"
                 fill
                 sizes="(max-width: 680px) 100vw, 33vw"
-                style={{ objectPosition: "center 24%" }}
+                style={{ objectPosition: "center 28%" }}
               />
               <b>02</b>
             </div>
-            <figcaption>Navraas / Colour, community, and celebration</figcaption>
+            <figcaption>Navraas / Dressed for the celebration</figcaption>
           </figure>
           <figure className="gallery-item reveal">
             <div className="gallery-photo">
@@ -708,6 +724,67 @@ export default function ClubSite() {
             </div>
             <figcaption>Farewell / One more frame before the next loop</figcaption>
           </figure>
+          <figure className="gallery-item gallery-item--portrait reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/random/_VBC9266.jpg"
+                alt="Two students dressed for the Navraas celebration"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+                style={{ objectPosition: "center 24%" }}
+              />
+              <b>11</b>
+            </div>
+            <figcaption>Navraas / Festival night portraits</figcaption>
+          </figure>
+          <figure className="gallery-item gallery-item--wide reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/Codenovate/toast_0126-261.jpg"
+                alt="The KMIT campus during Codenovate at night"
+                fill
+                sizes="(max-width: 680px) 100vw, (max-width: 980px) 100vw, 66vw"
+              />
+              <b>12</b>
+            </div>
+            <figcaption>Codenovate 2.0 / The campus after dark</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/KBC+SS/DSC01802.jpg"
+                alt="A contestant seated in the KBC hot seat"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>13</b>
+            </div>
+            <figcaption>KBC / Thinking through the next answer</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/reboot/DSC01265.jpg"
+                alt="A speaker explaining retrieval-augmented generation at ReBoot"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>14</b>
+            </div>
+            <figcaption>ReBoot I / RAG gets smarter</figcaption>
+          </figure>
+          <figure className="gallery-item reveal">
+            <div className="gallery-photo">
+              <Image
+                src="/images/Codenovate/DSC03560.jpg"
+                alt="The Codenovate organizing team seated on campus steps"
+                fill
+                sizes="(max-width: 680px) 100vw, 33vw"
+              />
+              <b>15</b>
+            </div>
+            <figcaption>Codenovate 2.0 / The team behind the build</figcaption>
+          </figure>
         </div>
       </section>
 
@@ -771,8 +848,14 @@ export default function ClubSite() {
     <footer className="site-footer">
       <div className="footer__brand">
         <a className="brand brand--footer" href="#top">
-          <span className="brand__mark">R/</span>
-          <span className="brand__name">RECURSE</span>
+          <span className="brand__logo brand__logo--dark" aria-hidden="true">
+            <Image
+              src="/recurse-logo-white.png"
+              alt=""
+              width={464}
+              height={135}
+            />
+          </span>
         </a>
         <p>KMIT's technical club.<br />Built by the terminally curious.</p>
       </div>

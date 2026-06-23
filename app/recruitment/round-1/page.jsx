@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const ENCODED_RESULTS_LINK =
@@ -29,11 +30,13 @@ export default function RoundOneAccessPage() {
         <header className={styles.header}>
           <div className={styles.brand}>
             <span className={styles.logo} aria-hidden="true">
-              R/
-            </span>
-            <span className={styles.brandCopy}>
-              <strong>RECURSE</strong>
-              <small>KMIT Technical Club</small>
+              <Image
+                src="/recurse-logo-black.png"
+                alt=""
+                width={464}
+                height={135}
+                priority
+              />
             </span>
           </div>
           <span className={styles.badge}>Recruitment / R1</span>

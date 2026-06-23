@@ -57,8 +57,15 @@ export default function TeamSite() {
 
       <header className="site-header" data-header>
         <a className="brand" href="/#top" aria-label="Recurse home">
-          <span className="brand__mark" aria-hidden="true">R/</span>
-          <span className="brand__name">RECURSE</span>
+          <span className="brand__logo brand__logo--dark" aria-hidden="true">
+            <Image
+              src="/recurse-logo-white.png"
+              alt=""
+              width={464}
+              height={135}
+              priority
+            />
+          </span>
         </a>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -211,8 +218,14 @@ export default function TeamSite() {
       <footer className="site-footer">
         <div className="footer__brand">
           <a className="brand brand--footer" href="/#top">
-            <span className="brand__mark">R/</span>
-            <span className="brand__name">RECURSE</span>
+            <span className="brand__logo brand__logo--dark" aria-hidden="true">
+              <Image
+                src="/recurse-logo-white.png"
+                alt=""
+                width={464}
+                height={135}
+              />
+            </span>
           </a>
           <p>KMIT's technical club.<br />Built by the terminally curious.</p>
         </div>

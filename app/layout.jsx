@@ -5,7 +5,8 @@ export const metadata = {
   description:
     "Recurse is KMIT's technical club for builders, problem-solvers, and students who want to go beyond the classroom.",
   icons: {
-    icon: "/icon.svg",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
   },
 };
 
