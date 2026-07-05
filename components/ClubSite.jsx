@@ -801,8 +801,11 @@ export default function ClubSite() {
           @recurse.official.
         </p>
         <div className="join__actions reveal">
+          <a className="button button--dark" href="/recruitment/results">
+            Final results <span>↗</span>
+          </a>
           <a
-            className="button button--dark"
+            className="button button--line"
             href="https://www.instagram.com/recurse.official/"
             target="_blank"
             rel="noreferrer"

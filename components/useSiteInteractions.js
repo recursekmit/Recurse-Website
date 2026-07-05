@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const terminalCommands = {
   help:
-    "Commands: about, events, codenovate, cigs, impact, team, join, instagram, clear",
+    "Commands: about, events, codenovate, cigs, impact, team, join, results, instagram, clear",
   about:
     "Recurse is KMIT's technical club for CS + ECE builders who want to go beyond the classroom.",
   events:
@@ -18,7 +18,9 @@ const terminalCommands = {
   team:
     "Club Head: Jai Atul Parmar. Co-Club Head: Morsu Greeshma. Visit /team for the core team.",
   join:
-    "Recruitment link pending. Follow @recurse.official for the next intake announcement.",
+    "Final recruitment results are live at /recruitment/results. Follow @recurse.official for future updates.",
+  results:
+    "Final selected list: /recruitment/results. Search by roll number in all caps.",
   instagram: "https://www.instagram.com/recurse.official/",
 };
 
