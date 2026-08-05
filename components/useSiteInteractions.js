@@ -4,11 +4,7 @@ import { useEffect } from "react";
 
 const terminalCommands = {
   help:
-<<<<<<< HEAD
-    "Commands: about, events, opportunities, codenovate, cigs, impact, team, join, instagram, clear",
-=======
-    "Commands: about, events, codenovate, cigs, impact, team, join, results, instagram, clear",
->>>>>>> origin/main
+    "Commands: about, events, opportunities, codenovate, cigs, impact, team, join, results, instagram, clear",
   about:
     "Recurse is KMIT's technical club for CS + ECE builders who want to go beyond the classroom.",
   events:
@@ -72,7 +68,7 @@ export function useSiteInteractions() {
     menuToggle?.addEventListener("click", toggleMenu);
     cleanups.push(() => menuToggle?.removeEventListener("click", toggleMenu));
 
-    const mobileLinks = mobileNav?.querySelectorAll("a") ?? [];
+    const mobileLinks = mobileNav?.querySelectorAll("a, button") ?? [];
     const closeMenu = () => {
       menuToggle?.setAttribute("aria-expanded", "false");
       mobileNav?.classList.remove("is-open");

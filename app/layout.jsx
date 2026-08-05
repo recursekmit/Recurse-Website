@@ -56,14 +56,9 @@ export const metadata = {
     images: ["/opengraph-image"],
   },
   icons: {
-<<<<<<< HEAD
-    icon: "/icon.svg",
-    shortcut: "/icon.svg",
-    apple: "/icon.svg",
-=======
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
->>>>>>> origin/main
+    apple: "/recurse-logo-black.png",
   },
 };
 
@@ -80,7 +75,7 @@ export default function RootLayout({ children }) {
     name: "Recurse — The Technical Club of KMIT",
     alternateName: ["Recurse KMIT", "Recurse Club KMIT"],
     url: siteConfig.url,
-    logo: `${siteConfig.url}/icon.svg`,
+    logo: `${siteConfig.url}/recurse-logo-black.png`,
     description: siteConfig.description,
     email: siteConfig.email,
     sameAs: [siteConfig.instagram, siteConfig.linkedin],
