@@ -4,11 +4,13 @@ import { useEffect } from "react";
 
 const terminalCommands = {
   help:
-    "Commands: about, events, codenovate, cigs, impact, team, join, instagram, clear",
+    "Commands: about, events, opportunities, codenovate, cigs, impact, team, join, instagram, clear",
   about:
     "Recurse is KMIT's technical club for CS + ECE builders who want to go beyond the classroom.",
   events:
     "Codenovate / KBC / Real Life Subway Surfers / CoinQuest / Reboot / CIG / Engineer'd",
+  opportunities:
+    "Browse verified internships, fresher roles, fellowships, and research opportunities at /opportunities.",
   codenovate:
     "Codenovate 2.0: 376 registered teams, 61 finalist teams, 239 on-site builders, and 24 hours to ship.",
   cigs:

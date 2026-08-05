@@ -29,6 +29,7 @@ export default function ClubSite() {
       <nav className="desktop-nav" aria-label="Primary navigation">
         <a href="#about">About</a>
         <a href="#events">Events</a>
+        <a href="/opportunities">Opportunities</a>
         <a href="#impact">Impact</a>
         <a href="#gallery">Gallery</a>
         <a href="/team">Team</a>
@@ -49,10 +50,11 @@ export default function ClubSite() {
       <nav className="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
         <a href="#about">01 / About</a>
         <a href="#events">02 / Events</a>
+        <a href="/opportunities">03 / Opportunities</a>
         <a href="#impact">04 / Impact</a>
-        <a href="#gallery">06 / Gallery</a>
-        <a href="/team">07 / Team</a>
-        <a href="#join">08 / Join</a>
+        <a href="#gallery">05 / Gallery</a>
+        <a href="/team">06 / Team</a>
+        <a href="#join">07 / Join</a>
       </nav>
     </header>
 
@@ -128,9 +130,9 @@ export default function ClubSite() {
         <div className="manifesto__grid">
           <div className="manifesto__copy reveal">
             <p className="lead">
-              Recurse gives students the room, resources, and people to pursue
-              computer science and electronics outside the limits of a
-              classroom.
+              At Keshav Memorial Institute of Technology (KMIT), Recurse gives
+              students the room, resources, and people to pursue computer
+              science and electronics outside the limits of a classroom.
             </p>
             <p>
               It is a place to get technically dangerous—in the best way.
@@ -644,13 +646,14 @@ export default function ClubSite() {
           <span className="brand__mark">R/</span>
           <span className="brand__name">RECURSE</span>
         </a>
-        <p>KMIT's technical club.<br />Built by the terminally curious.</p>
+        <p>The technical club of Keshav Memorial Institute of Technology.<br />Built by the terminally curious.</p>
       </div>
       <div className="footer__links">
         <div>
           <span>NAVIGATE</span>
           <a href="#about">About</a>
           <a href="#events">Events</a>
+          <a href="/opportunities">Opportunities</a>
           <a href="#impact">Impact</a>
           <a href="#gallery">Gallery</a>
           <a href="/team">Team</a>

@@ -11,6 +11,9 @@ export const metadata = {
     follow: false,
     nocache: true,
   },
+  alternates: {
+    canonical: "/recruitment/round-1",
+  },
 };
 
 export default function RoundOneAccessPage() {

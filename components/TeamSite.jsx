@@ -57,6 +57,7 @@ export default function TeamSite() {
         <nav className="desktop-nav" aria-label="Primary navigation">
           <a href="/#about">About</a>
           <a href="/#events">Events</a>
+          <a href="/opportunities">Opportunities</a>
           <a href="/#impact">Impact</a>
           <a href="/#gallery">Gallery</a>
           <a href="/team">Team</a>
@@ -77,9 +78,10 @@ export default function TeamSite() {
         <nav className="mobile-nav" aria-label="Mobile navigation" data-mobile-nav>
           <a href="/#about">01 / About</a>
           <a href="/#events">02 / Events</a>
-          <a href="/#impact">03 / Impact</a>
-          <a href="/#gallery">04 / Gallery</a>
-          <a href="/team">05 / Team</a>
+          <a href="/opportunities">03 / Opportunities</a>
+          <a href="/#impact">04 / Impact</a>
+          <a href="/#gallery">05 / Gallery</a>
+          <a href="/team">06 / Team</a>
         </nav>
       </header>
 
@@ -185,13 +187,14 @@ export default function TeamSite() {
             <span className="brand__mark">R/</span>
             <span className="brand__name">RECURSE</span>
           </a>
-          <p>KMIT's technical club.<br />Built by the terminally curious.</p>
+          <p>The technical club of Keshav Memorial Institute of Technology.<br />Built by the terminally curious.</p>
         </div>
         <div className="footer__links">
           <div>
             <span>NAVIGATE</span>
             <a href="/#about">About</a>
             <a href="/#events">Events</a>
+            <a href="/opportunities">Opportunities</a>
             <a href="/#impact">Impact</a>
             <a href="/team">Team</a>
           </div>

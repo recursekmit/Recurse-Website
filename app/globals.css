@@ -216,12 +216,14 @@ a {
 }
 
 .desktop-nav a:hover,
-.desktop-nav a:focus-visible {
+.desktop-nav a:focus-visible,
+.desktop-nav a[aria-current="page"] {
   color: var(--white);
 }
 
 .desktop-nav a:hover::before,
-.desktop-nav a:focus-visible::before {
+.desktop-nav a:focus-visible::before,
+.desktop-nav a[aria-current="page"]::before {
   opacity: 1;
   transform: translateY(-50%) scale(1);
 }
@@ -229,10 +231,12 @@ a {
 .header-cta {
   justify-self: end;
   padding: 0.75rem 0.95rem;
+  border: 0;
   color: var(--ink);
   background: var(--green);
   font: 700 0.68rem var(--mono);
   text-transform: uppercase;
+  cursor: pointer;
   transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
 }
 
@@ -2526,12 +2530,20 @@ a {
     transform: translateY(0);
   }
 
-  .mobile-nav a {
+  .mobile-nav a,
+  .mobile-nav button {
     padding: 0.7rem 0;
     border-bottom: 1px solid var(--line);
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    color: var(--white);
+    background: transparent;
     font-size: clamp(2.1rem, 7vw, 4rem);
     font-weight: 700;
     letter-spacing: -0.06em;
+    text-align: left;
+    cursor: pointer;
   }
 
   .hero__bottom {
