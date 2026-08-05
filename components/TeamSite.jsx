@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useSiteInteractions } from "./useSiteInteractions";
 
 const clubHeads = [
@@ -8,12 +9,18 @@ const clubHeads = [
     role: "Club Head",
     code: "JAP",
     focus: "Recurse Leadership · 2025–26",
+    image: "/images/jai.jpg",
+    imageAlt: "Jai Atul Parmar speaking at a Recurse event",
+    imagePosition: "center 28%",
   },
   {
     name: "Morsu Greeshma",
     role: "Co-Club Head",
     code: "MG",
     focus: "Recurse Leadership · 2025–26",
+    image: "/images/Greeshma.jpg",
+    imageAlt: "Morsu Greeshma speaking at a Recurse event",
+    imagePosition: "center 22%",
   },
 ];
 
@@ -50,8 +57,15 @@ export default function TeamSite() {
 
       <header className="site-header" data-header>
         <a className="brand" href="/#top" aria-label="Recurse home">
-          <span className="brand__mark" aria-hidden="true">R/</span>
-          <span className="brand__name">RECURSE</span>
+          <span className="brand__logo brand__logo--dark" aria-hidden="true">
+            <Image
+              src="/recurse-logo-white.png"
+              alt=""
+              width={464}
+              height={135}
+              priority
+            />
+          </span>
         </a>
 
         <nav className="desktop-nav" aria-label="Primary navigation">
@@ -87,6 +101,14 @@ export default function TeamSite() {
 
       <main id="team-content">
         <section className="team-hero">
+          <Image
+            className="team-hero__photo"
+            src="/images/icebreaking.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+            priority
+          />
           <div className="hero-grid" aria-hidden="true"></div>
           <div className="team-hero__eyebrow">
             <span className="status-dot"></span>
@@ -125,7 +147,14 @@ export default function TeamSite() {
             {clubHeads.map((member, index) => (
               <article className="team-lead-card reveal" key={member.name}>
                 <div className="team-avatar team-avatar--lead">
-                  <span>{member.code}</span>
+                  <Image
+                    src={member.image}
+                    alt={member.imageAlt}
+                    fill
+                    sizes="(max-width: 680px) 100vw, 50vw"
+                    style={{ objectPosition: member.imagePosition }}
+                  />
+                  <span className="team-avatar__code">{member.code}</span>
                   <b>{String(index + 1).padStart(2, "0")}</b>
                 </div>
                 <div className="team-card__meta">
@@ -172,6 +201,13 @@ export default function TeamSite() {
         </section>
 
         <section className="team-cta">
+          <Image
+            className="team-cta__photo"
+            src="/images/farewell.jpg"
+            alt=""
+            fill
+            sizes="100vw"
+          />
           <p className="terminal-kicker reveal">&gt; collaborate --with recurse</p>
           <h2 className="reveal">BUILD WITH<br />THE TEAM.</h2>
           <div className="team-cta__actions reveal">
@@ -184,8 +220,14 @@ export default function TeamSite() {
       <footer className="site-footer">
         <div className="footer__brand">
           <a className="brand brand--footer" href="/#top">
-            <span className="brand__mark">R/</span>
-            <span className="brand__name">RECURSE</span>
+            <span className="brand__logo brand__logo--dark" aria-hidden="true">
+              <Image
+                src="/recurse-logo-white.png"
+                alt=""
+                width={464}
+                height={135}
+              />
+            </span>
           </a>
           <p>The technical club of Keshav Memorial Institute of Technology.<br />Built by the terminally curious.</p>
         </div>

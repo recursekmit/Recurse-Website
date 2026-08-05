@@ -14,6 +14,8 @@ export const timelineEvents = [
     category: "PLAY",
     description:
       "A prompt-driven challenge built around creative thinking and precise instructions.",
+    image: "/images/promptquest.jpg",
+    imageAlt: "Students working together during Prompt Quest",
   },
   {
     date: "2025-09-05",
@@ -40,6 +42,8 @@ export const timelineEvents = [
     description:
       "A mythology-themed social deduction game across junior and senior slots.",
     stat: "100 participants",
+    image: "/images/navras/WhatsApp Image 2026-06-22 at 11.35.23 PM.jpeg",
+    imageAlt: "Recurse members gathered together during Navraas",
   },
   {
     date: "2025-11-15",
@@ -49,6 +53,8 @@ export const timelineEvents = [
     description:
       "KMIT's national 24-hour hackathon - eight problem statements, a flashmob, a bonfire, and a closing jam session.",
     stat: "376 teams registered / 61 finalist teams",
+    image: "/images/Codenovate/codenovate_2k25-60.jpg",
+    imageAlt: "Codenovate participants gathered at the event",
   },
   {
     date: "2026-01-03",
@@ -75,6 +81,8 @@ export const timelineEvents = [
     description:
       "A full-day hands-on workshop on LLMs and Retrieval-Augmented Generation, capped off with the Gandalf prompt-injection game.",
     stat: "120 participants",
+    image: "/images/reboot/DSC00506.jpg",
+    imageAlt: "Students following the hands-on ReBoot workshop on their laptops",
   },
   {
     date: "2026-04-17",
@@ -84,5 +92,7 @@ export const timelineEvents = [
     description:
       "A Gen-Z nostalgia trivia game show with a progressive prize ladder, run alongside a real-world endless-runner challenge.",
     stat: "50+ teams",
+    image: "/images/KBC+SS/DSC01752.jpg",
+    imageAlt: "The KBC quiz projected during the event",
   },
 ];
