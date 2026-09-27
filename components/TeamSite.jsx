@@ -5,31 +5,27 @@ import { useSiteInteractions } from "./useSiteInteractions";
 
 const clubHeads = [
   {
-    name: "Jai Atul Parmar",
+    name: "Golla Bharath",
     role: "Club Head",
-    code: "JAP",
     focus: "Recurse Leadership · 2025–26",
-    image: "/images/jai.jpg",
-    imageAlt: "Jai Atul Parmar speaking at a Recurse event",
+    image: "/images/Bharath.jpeg",
+    imageAlt: "Golla Bharath speaking at a Recurse event",
     imagePosition: "center 28%",
   },
   {
-    name: "Morsu Greeshma",
-    role: "Co-Club Head",
-    code: "MG",
+    name: "Kondour Prakarsha",
+    role: "Club Head",
     focus: "Recurse Leadership · 2025–26",
-    image: "/images/Greeshma.jpg",
-    imageAlt: "Morsu Greeshma speaking at a Recurse event",
+    image: "/images/Prakarsha.jpeg",
+    imageAlt: "Kondour Prakarsha speaking at a Recurse event",
     imagePosition: "center 22%",
   },
 ];
 
 const coreMembers = [
-  { name: "Bharath", role: "Community Manager" },
   { name: "Thatikonda Rahul", role: "Content Creator" },
   { name: "Jinal Thakkar", role: "Content Creator" },
   { name: "Manapadi Naga Sharanya", role: "Content Creator" },
-  { name: "Kondour Prakarsha", role: "Documentation" },
   { name: "Tarang Harsola", role: "Documentation" },
   { name: "mir zaynul aabideen ali khan", role: "Domain Expert" },
   { name: "Shoaib Sadiq Salehmohamed", role: "Domain Expert" },
@@ -154,7 +150,6 @@ export default function TeamSite() {
                     sizes="(max-width: 680px) 100vw, 50vw"
                     style={{ objectPosition: member.imagePosition }}
                   />
-                  <span className="team-avatar__code">{member.code}</span>
                   <b>{String(index + 1).padStart(2, "0")}</b>
                 </div>
                 <div className="team-card__meta">

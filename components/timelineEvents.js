@@ -72,6 +72,8 @@ export const timelineEvents = [
     description:
       "Industry speakers break down DBS's recruitment process and work culture, livestreamed for anyone who could not make it in person.",
     stat: "280+ viewers",
+    image: "/images/DBS.jpeg",
+    imageAlt: "DBS workshop session",
   },
   {
     date: "2026-04-04",
@@ -94,5 +96,15 @@ export const timelineEvents = [
     stat: "50+ teams",
     image: "/images/KBC+SS/DSC01752.jpg",
     imageAlt: "The KBC quiz projected during the event",
+  },
+  {
+    date: "2026-09-26",
+    label: "SEP 2026",
+    title: "Break the Bot",
+    category: "PLAY",
+    description:
+      "A Prompt injection event challenging participants to interact with an AI chatbot and uncover hidden flags through three levels of increasing difficulty.",
+    image: "/images/break-the-bot.jpeg",
+    imageAlt: "Participants at the Break the Bot event",
   },
 ];

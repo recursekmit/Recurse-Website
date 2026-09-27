@@ -413,17 +413,21 @@ export default function ClubSite() {
               <span>007 / ALWAYS ON</span><span>↗</span>
             </div>
             <div className="event-card__art event-card__art--cig">
-              <div className="cluster" aria-hidden="true">
-                <i></i><i></i><i></i><i></i><i></i>
-              </div>
-              <span>CIG</span>
+              <Image
+                className="event-card__photo"
+                src="/images/CIGs.jpeg"
+                alt="Common Interest Groups meeting"
+                fill
+                sizes="(max-width: 980px) 100vw, 66vw"
+              />
+              <span className="event-card__photo-label">CIG</span>
             </div>
             <div className="event-card__body">
               <p>Peer Community</p>
               <h3>COMMON INTEREST GROUPS</h3>
               <span>Three active, peer-led groups for learning and building together.</span>
               <ul className="event-card__facts">
-                <li>Web Dev · AI/ML · DSA/CP</li>
+                <li>Web Dev · AI · DSA/CP · CyberSec · DevOps</li>
                 <li>65 registered members at launch</li>
               </ul>
             </div>
@@ -577,7 +581,7 @@ export default function ClubSite() {
           </article>
           <article>
             <span>GROUP_02</span>
-            <h3>AI &amp; MACHINE LEARNING</h3>
+            <h3>AI CIG</h3>
             <p>ML to deep learning, regression, classification, and neural networks.</p>
             <i>↗</i>
           </article>
@@ -587,9 +591,21 @@ export default function ClubSite() {
             <p>Arrays to advanced patterns, with Easy → Medium → Hard progression · Sat</p>
             <i>↗</i>
           </article>
+          <article>
+            <span>GROUP_04</span>
+            <h3>CYBERSECURITY</h3>
+            <p>Network security, cryptography, and ethical hacking fundamentals.</p>
+            <i>↗</i>
+          </article>
+          <article>
+            <span>GROUP_05</span>
+            <h3>DEVOPS</h3>
+            <p>CI/CD pipelines, containerization, and infrastructure as code.</p>
+            <i>↗</i>
+          </article>
         </div>
         <p className="cig-proof reveal">
-          <span>65 MEMBERS</span> registered across the three active groups
+          <span>65 MEMBERS</span> registered across the five active groups
           at the September 2025 introductory meet.
         </p>
       </section>
