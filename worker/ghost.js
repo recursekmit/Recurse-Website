@@ -7,6 +7,7 @@
 // The puzzle lives here, not in the page: the browser only sends terminal input and renders
 // what comes back, so DevTools shows neither the solution path nor a key the player hasn't reached.
 import { isValidRoll, normalizeRoll } from "../lib/ghost.js";
+import { notifyTelegram } from "./telegram.js";
 
 // Progress stages, in order. A command can only advance a player one stage at a time.
 const IDENTIFIED = 1, TRACED = 2, ENVIRONMENT = 3, DECODED = 4, RESTORED = 5;
@@ -93,25 +94,6 @@ function ensureSchema(db) {
       throw error;
     });
   return schemaReady;
-}
-
-async function notifyTelegram(env, text) {
-  const token = env.TELEGRAM_BOT_TOKEN?.trim();
-  const chatId = env.TELEGRAM_CHAT_ID?.trim();
-  if (!token || !chatId) {
-    console.warn("[ghost] Telegram is not configured; skipping notification:\n" + text);
-    return;
-  }
-  try {
-    const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ chat_id: chatId, text, disable_web_page_preview: true }),
-    });
-    if (!response.ok) console.error("[ghost] Telegram error", response.status, await response.text());
-  } catch (error) {
-    console.error("[ghost] Telegram request failed", error);
-  }
 }
 
 async function solve(env, ctx, player) {

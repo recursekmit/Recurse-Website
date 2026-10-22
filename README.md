@@ -163,6 +163,22 @@ the site's JavaScript. Each player's progress is stored in D1, and a step can't 
    `message.chat.id` (group IDs are negative).
 3. Deploy as usual (`npm run deploy:workers` or the Git integration).
 
+### Telegram export button
+
+The bot can send a PDF of every completion. Tap **📄 Export completions** (under each solve
+alert, or pinned under the chat box after `/start`) or send `/export`. The Worker answers at
+`/api/telegram/webhook`, accepts only requests carrying a secret token derived from
+`GHOST_SECRET`, and only replies to `TELEGRAM_CHAT_ID`.
+
+After the first deploy that includes the webhook (and again if `GHOST_SECRET` or the domain
+changes), register it once:
+
+```bash
+TELEGRAM_BOT_TOKEN=... GHOST_SECRET=<production value> npm run telegram:setup
+```
+
+Registering a webhook turns off `getUpdates`, so look up a new chat ID before running it.
+
 ### Local development
 
 Copy `.dev.vars.example` to `.dev.vars` and fill it in. Then either:
@@ -208,3 +224,4 @@ attempts.
 - `components/GhostProcess.jsx` — Ghost Process terminal UI (no puzzle logic)
 - `worker/ghost.js` — Ghost Process API: puzzle, keys, D1 progress, Telegram alerts
 - `worker/index.js`, `functions/api/ghost/[[path]].js` — Workers and Pages entries for that API
+- `worker/telegram.js`, `worker/pdf.js` — Telegram alerts, the export button webhook, and the completions PDF
