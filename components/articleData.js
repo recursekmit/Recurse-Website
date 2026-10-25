@@ -1,5 +1,17 @@
 export const articles = [
 	{
+		week: 4,
+		title: "What Should Happen Next?",
+		description:
+			"A good answer is not the same as a good action. A visual essay on LLMs, typed decision models like Jev, calibration, and what should happen before a model's output is allowed to change the world.",
+		thumbnail: "/images/writes/edition-04.png",
+		mediumUrl:
+			"https://medium.com/@recursekmit/what-should-happen-next-a02d72fb31a2",
+		substackUrl: "https://recursekmit.substack.com/p/what-should-happen-next",
+		date: "2026-10-25",
+		author: "SreeSaketh Tangella",
+	},
+	{
 		week: 3,
 		title: "Context Windows Are Getting Bigger. Are Models Getting Better?",
 		description:
