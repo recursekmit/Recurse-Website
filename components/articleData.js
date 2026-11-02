@@ -1,5 +1,17 @@
 export const articles = [
 	{
+		week: 5,
+		title: "Reverse Engineer Anything: Every Binary Is Readable Now",
+		description:
+			"REA hands an AI agent the instruments of a professional reverse engineer, then forces it to prove every word it says. Here’s how it works inside, and what happens when you point it at GTA San Andreas",
+		thumbnail: "/images/writes/edition-05.png",
+		mediumUrl:
+			"https://medium.com/@recursekmit/reverse-engineer-anything-every-binary-is-readable-now-36815dc431f4",
+		substackUrl: "https://recursekmit.substack.com/p/reverse-engineer-anything-every-binary",
+		date: "2026-11-01",
+		author: "Aditya Tipirneni",
+	},
+	{
 		week: 4,
 		title: "What Should Happen Next?",
 		description:
