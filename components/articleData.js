@@ -1,5 +1,18 @@
 export const articles = [
 	{
+		week: 6,
+		title: "Are We Cooked? What Automation Is Actually Doing to Jobs",
+		description:
+			"The viral numbers measure exposure, not layoffs. What the research says about AI and jobs, what building automated systems teaches you about where the work moves, and what a BTech student should actually do about it.",
+		thumbnail: "/images/writes/edition-06.png",
+		mediumUrl:
+			"https://medium.com/@recursekmit/are-we-cooked-what-automation-is-actually-doing-to-jobs-8786fab66259",
+		substackUrl:
+			"https://recursekmit.substack.com/p/are-we-cooked-what-automation-is",
+		date: "2026-11-08",
+		author: "Sudharshan",
+	},
+	{
 		week: 5,
 		title: "Reverse Engineer Anything: Every Binary Is Readable Now",
 		description:
