@@ -1,5 +1,18 @@
 export const articles = [
 	{
+		week: 7,
+		title: "Trust Issues: When AI Starts Taking Orders From Strangers",
+		description:
+			"AI agents can read our files, call our tools and take real actions, which makes one question urgent: do they know which instructions deserve to be trusted? A look at prompt injection, RAG poisoning, and why agent security has to live outside the model, in permissions and boundaries rather than polite warnings.",
+		thumbnail: "/images/writes/edition-07.png",
+		mediumUrl:
+			"https://medium.com/@recursekmit/trust-issues-when-ai-starts-taking-orders-from-strangers-efe8c8166ac3",
+		substackUrl:
+			"https://recursekmit.substack.com/p/trust-issues-when-ai-starts-taking",
+		date: "2026-11-15",
+		author: "SreeSaketh Tangella",
+	},
+	{
 		week: 6,
 		title: "Are We Cooked? What Automation Is Actually Doing to Jobs",
 		description:
